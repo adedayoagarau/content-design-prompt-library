@@ -453,6 +453,6 @@ report_generation_content:
 
 ---
 
-**Accessibility Requirements**: All generated reports must meet WCAG 2.1 Level AA standards. PDFs must be tagged for screen reader navigation with proper heading hierarchy. Tables must include row and column headers. Excel reports should use named ranges and clear labels. Avoid color-only indicators - use icons and patterns. Provide text alternatives for all charts and graphs. Ensure sufficient color contrast for all text elements.
+**Accessibility Requirements**: All generated reports must meet WCAG 3.0 Level AA standards. PDFs must be tagged for screen reader navigation with proper heading hierarchy. Tables must include row and column headers. Excel reports should use named ranges and clear labels. Avoid color-only indicators - use icons and patterns. Provide text alternatives for all charts and graphs. Ensure sufficient color contrast for all text elements.
 
 **Psychological Principles**: Clear progress indicators reduce anxiety during generation (uncertainty reduction). File size and time estimates set accurate expectations (expectation management). Format descriptions aid decision-making (decision support). Executive summaries leverage primacy effect (information hierarchy). Consistent report structure builds familiarity and trust (recognition over recall). Methodology transparency increases credibility (source credibility theory).

@@ -296,6 +296,6 @@ dynamic_content:
 
 ---
 
-**Accessibility Requirements**: Must comply with WCAG 2.1 Level AA (ideally AAA). Follow ARIA Authoring Practices Guide 1.2 for widget patterns. Ensure all content is perceivable, operable, understandable, and robust per POUR principles. Test with actual screen reader users across platforms. Provide text alternatives for all non-text content. Ensure logical reading order and focus management.
+**Accessibility Requirements**: Must comply with WCAG 3.0 Level AA (ideally AAA). Follow ARIA Authoring Practices Guide 1.2 for widget patterns. Ensure all content is perceivable, operable, understandable, and robust per POUR principles. Test with actual screen reader users across platforms. Provide text alternatives for all non-text content. Ensure logical reading order and focus management.
 
 **Psychological Principles**: Reduced cognitive load through predictable patterns (consistency principle). Clear mental models through semantic structure (schema theory). Confidence building through informative feedback (self-efficacy). Reduced anxiety through proactive guidance (uncertainty reduction theory). Empowerment through comprehensive keyboard access (autonomy principle).

@@ -293,6 +293,6 @@ decorative_designation:
 
 ---
 
-**Accessibility Requirements**: Must comply with WCAG 2.1 Success Criterion 1.1.1 (Non-text Content) Level A. Follow W3C Alt Text Decision Tree and DIAGRAM Center guidelines for complex images. Ensure alt text is concise yet complete, context-appropriate, and never redundant with visible text. Provide long descriptions for complex images via aria-describedby, longdesc, or adjacent text. Use alt="" for decorative images. Test with actual screen readers (JAWS, NVDA, VoiceOver, TalkBack).
+**Accessibility Requirements**: Must comply with WCAG 3.0 Success Criterion 1.1.1 (Non-text Content) Level A. Follow W3C Alt Text Decision Tree and DIAGRAM Center guidelines for complex images. Ensure alt text is concise yet complete, context-appropriate, and never redundant with visible text. Provide long descriptions for complex images via aria-describedby, longdesc, or adjacent text. Use alt="" for decorative images. Test with actual screen readers (JAWS, NVDA, VoiceOver, TalkBack).
 
 **Psychological Principles**: Information equivalence ensures cognitive parity (cognitive load theory). Context-appropriate detail reduces uncertainty (information theory). Concise descriptions respect working memory limits (Miller's Law). Functional alt text supports goal completion (goal-setting theory). Consistent patterns build predictability (schema theory).

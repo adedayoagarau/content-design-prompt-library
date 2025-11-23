@@ -533,6 +533,6 @@ communications:
 
 ---
 
-**Accessibility Requirements**: Gender-neutral language must maintain WCAG 2.1 Level AA compliance. Ensure form labels are clear for screen readers. Use semantic HTML for form fields (never use placeholder as label). Provide clear explanations for why gender/pronoun information is collected. Make identity fields optional when possible. Respect user's chosen pronouns in all system communications. Test with diverse users including transgender and non-binary people. Ensure language doesn't create barriers or cause harm.
+**Accessibility Requirements**: Gender-neutral language must maintain WCAG 3.0 Level AA compliance. Ensure form labels are clear for screen readers. Use semantic HTML for form fields (never use placeholder as label). Provide clear explanations for why gender/pronoun information is collected. Make identity fields optional when possible. Respect user's chosen pronouns in all system communications. Test with diverse users including transgender and non-binary people. Ensure language doesn't create barriers or cause harm.
 
 **Psychological Principles**: Inclusive language increases sense of belonging (social identity theory). Being seen and respected improves user experience (self-affirmation theory). Respectful language builds trust (reciprocity principle). Assumptions create exclusion (in-group/out-group bias). Allowing self-identification supports autonomy (self-determination theory). Gender-neutral defaults reduce cognitive load (default effect).

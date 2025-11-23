@@ -392,6 +392,6 @@ puede arrastrar y soltar.
 
 ---
 
-**Accessibility Requirements**: Must comply with WCAG 2.1 Success Criterion 1.2.2 (Captions - Prerecorded) Level A and 1.2.4 (Captions - Live) Level AA. Follow DCMP (Described and Captioned Media Program) captioning guidelines. Ensure minimum 4.5:1 contrast ratio for caption text against background. Support user customization of caption appearance (size, font, color, background). Provide accurate synchronization within 100ms. Include all speech and significant sound effects. Test with deaf/hard-of-hearing users and multiple screen sizes.
+**Accessibility Requirements**: Must comply with WCAG 3.0 Success Criterion 1.2.2 (Captions - Prerecorded) Level A and 1.2.4 (Captions - Live) Level AA. Follow DCMP (Described and Captioned Media Program) captioning guidelines. Ensure minimum 4.5:1 contrast ratio for caption text against background. Support user customization of caption appearance (size, font, color, background). Provide accurate synchronization within 100ms. Include all speech and significant sound effects. Test with deaf/hard-of-hearing users and multiple screen sizes.
 
 **Psychological Principles**: Cognitive load management through reading speed limits (working memory capacity). Redundancy coding through audio + visual channels (dual coding theory). Attention management through strategic positioning (selective attention). Comprehension support through logical segmentation (chunking). Inclusive design benefits all users (curb-cut effect).

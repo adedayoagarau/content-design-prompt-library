@@ -189,6 +189,6 @@ Generate 10 test scenarios with responses:
 
 ---
 
-**Accessibility Requirements**: Voice calibration must support WCAG 2.1 Level AA compliance with clear, plain language. Tone adjustments should never sacrifice clarity for personality. All responses should be comprehensible to users with cognitive disabilities.
+**Accessibility Requirements**: Voice calibration must support WCAG 3.0 Level AA compliance with clear, plain language. Tone adjustments should never sacrifice clarity for personality. All responses should be comprehensible to users with cognitive disabilities.
 
 **Psychological Principles**: Consistency builds trust (commitment & consistency principle). Voice matching user's emotional state creates rapport (mirroring effect). Clear authority reduces cognitive load (authority bias).

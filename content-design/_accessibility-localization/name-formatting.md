@@ -581,6 +581,6 @@ display_examples:
 
 ---
 
-**Accessibility Requirements**: Name forms must comply with WCAG 2.1 Level AA. Use semantic HTML with proper labels. Never rely on placeholder text alone. Provide clear error messages with guidance. Support screen readers with proper ARIA labels. Use autocomplete attributes for browser autofill. Ensure minimum touch target sizes (44x44px). Support all Unicode characters (never restrict to ASCII). Allow keyboard navigation through all fields. Test with diverse international users and assistive technologies.
+**Accessibility Requirements**: Name forms must comply with WCAG 3.0 Level AA. Use semantic HTML with proper labels. Never rely on placeholder text alone. Provide clear error messages with guidance. Support screen readers with proper ARIA labels. Use autocomplete attributes for browser autofill. Ensure minimum touch target sizes (44x44px). Support all Unicode characters (never restrict to ASCII). Allow keyboard navigation through all fields. Test with diverse international users and assistive technologies.
 
 **Psychological Principles**: Respecting name preferences builds trust (reciprocity). Allowing self-identification supports autonomy (self-determination theory). Single-field forms reduce cognitive load (minimalism). Familiar patterns feel comfortable (schema theory). Correct display shows respect (dignity and respect). Flexible systems accommodate diversity (inclusive design). Personal names are core to identity (social identity theory).

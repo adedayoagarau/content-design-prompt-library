@@ -223,6 +223,6 @@ fallback_system:
 
 ---
 
-**Accessibility Requirements**: Fallbacks must never blame users for unclear input. Support multiple input modalities. Provide clear escape routes. Never trap users in fallback loops - escalate proactively. WCAG 2.1: clear error identification with constructive suggestion.
+**Accessibility Requirements**: Fallbacks must never blame users for unclear input. Support multiple input modalities. Provide clear escape routes. Never trap users in fallback loops - escalate proactively. WCAG 3.0: clear error identification with constructive suggestion.
 
 **Psychological Principles**: Reduce user frustration through progressive help (emotional design). Maintain face (politeness theory). Provide clear path forward to reduce anxiety. Escalate before complete failure (loss aversion prevention).

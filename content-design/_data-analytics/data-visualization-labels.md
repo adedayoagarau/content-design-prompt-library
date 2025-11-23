@@ -350,6 +350,6 @@ visualization_labels:
 
 ---
 
-**Accessibility Requirements**: All visualizations must include text alternatives meeting WCAG 2.1 Level AA standards. Color cannot be the sole method of conveying information - use patterns, labels, or textures. Provide both aria-label for summary and long descriptions for detailed data. Ensure sufficient color contrast (minimum 4.5:1 for text, 3:1 for graphical elements). Offer tabular data alternative for complex visualizations. Support keyboard navigation for interactive charts.
+**Accessibility Requirements**: All visualizations must include text alternatives meeting WCAG 3.0 Level AA standards. Color cannot be the sole method of conveying information - use patterns, labels, or textures. Provide both aria-label for summary and long descriptions for detailed data. Ensure sufficient color contrast (minimum 4.5:1 for text, 3:1 for graphical elements). Offer tabular data alternative for complex visualizations. Support keyboard navigation for interactive charts.
 
 **Psychological Principles**: Clear labels reduce cognitive load by eliminating ambiguity (cognitive fluency). Consistent formatting builds pattern recognition (schema theory). Data-ink ratio optimization focuses attention on insights over decoration (minimalism). Contextual annotations guide interpretation (anchoring and framing). Progressive disclosure prevents information overload (chunking principle).

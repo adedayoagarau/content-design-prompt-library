@@ -511,6 +511,6 @@ character_limit_strategy:
 
 ---
 
-**Accessibility Requirements**: Internationalized content must maintain WCAG 2.1 Level AA compliance across all locales. Ensure translated text remains clear and plain language for target reading levels. Support screen readers in all target languages. Maintain keyboard navigation patterns culturally appropriate for each locale. Respect RTL text direction for Arabic and Hebrew. Test all localized versions with native speakers and assistive technologies.
+**Accessibility Requirements**: Internationalized content must maintain WCAG 3.0 Level AA compliance across all locales. Ensure translated text remains clear and plain language for target reading levels. Support screen readers in all target languages. Maintain keyboard navigation patterns culturally appropriate for each locale. Respect RTL text direction for Arabic and Hebrew. Test all localized versions with native speakers and assistive technologies.
 
 **Psychological Principles**: Linguistic relativity affects perception (Sapir-Whorf hypothesis). Cultural context influences interpretation (cultural schema theory). Consistency builds trust across languages (fluency heuristic). Clear structure aids comprehension regardless of language (cognitive load theory). Localized content feels more trustworthy (in-group bias).

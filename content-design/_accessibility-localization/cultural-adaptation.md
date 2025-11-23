@@ -541,6 +541,6 @@ changes_made:
 
 ---
 
-**Accessibility Requirements**: Cultural adaptation must maintain or improve accessibility. Ensure adapted content meets WCAG 2.1 Level AA in target language. Consider cultural differences in disability perception and support. Adapt examples to be culturally relevant without sacrificing clarity. Maintain plain language principles in target culture's context. Test with native speakers including users with disabilities. Respect target culture's preferences for directness, formality, and communication style while maintaining accessibility.
+**Accessibility Requirements**: Cultural adaptation must maintain or improve accessibility. Ensure adapted content meets WCAG 3.0 Level AA in target language. Consider cultural differences in disability perception and support. Adapt examples to be culturally relevant without sacrificing clarity. Maintain plain language principles in target culture's context. Test with native speakers including users with disabilities. Respect target culture's preferences for directness, formality, and communication style while maintaining accessibility.
 
 **Psychological Principles**: Cultural schema theory guides adaptation strategies. In-group favoritism increases trust in localized content. Uncertainty avoidance influences need for detail. Power distance affects tone and authority references. Cultural dimensions shape persuasion effectiveness (Hofstede). Context-dependent communication varies by culture (Hall). Localization increases processing fluency and trust.

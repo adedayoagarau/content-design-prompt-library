@@ -582,6 +582,6 @@ ios_rtl_support:
 
 ---
 
-**Accessibility Requirements**: RTL interfaces must maintain WCAG 2.1 Level AA compliance. Ensure proper reading order for screen readers in RTL languages. Focus indicators must be visible and correctly positioned. Keyboard navigation (Tab order) must follow RTL reading order. Test with RTL screen readers (NVDA with Arabic/Hebrew, VoiceOver with Hebrew, TalkBack with Arabic). Maintain 4.5:1 contrast ratio for all text. Ensure touch targets remain 44x44px minimum in all layouts.
+**Accessibility Requirements**: RTL interfaces must maintain WCAG 3.0 Level AA compliance. Ensure proper reading order for screen readers in RTL languages. Focus indicators must be visible and correctly positioned. Keyboard navigation (Tab order) must follow RTL reading order. Test with RTL screen readers (NVDA with Arabic/Hebrew, VoiceOver with Hebrew, TalkBack with Arabic). Maintain 4.5:1 contrast ratio for all text. Ensure touch targets remain 44x44px minimum in all layouts.
 
 **Psychological Principles**: Reading direction affects visual scanning patterns (cultural schema theory). RTL users scan from right to left (F-pattern mirrored). Consistency with native reading direction reduces cognitive load. Proper RTL layout feels natural and trustworthy to native users (processing fluency). Cultural appropriateness builds credibility (in-group favoritism).

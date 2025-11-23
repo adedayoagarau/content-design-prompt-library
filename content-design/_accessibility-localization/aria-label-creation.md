@@ -369,6 +369,6 @@ live_regions:
 
 ---
 
-**Accessibility Requirements**: Must comply with WCAG 2.1 Level AA and follow WAI-ARIA Authoring Practices Guide 1.2. Use ARIA only when semantic HTML is insufficient (First Rule of ARIA). Ensure all ARIA states are synchronized with visual states. Test with JAWS, NVDA, VoiceOver, and TalkBack. Validate ARIA implementation with automated tools (axe, WAVE) and manual screen reader testing. Never hide focusable content with aria-hidden="true".
+**Accessibility Requirements**: Must comply with WCAG 3.0 Level AA and follow WAI-ARIA Authoring Practices Guide 1.2. Use ARIA only when semantic HTML is insufficient (First Rule of ARIA). Ensure all ARIA states are synchronized with visual states. Test with JAWS, NVDA, VoiceOver, and TalkBack. Validate ARIA implementation with automated tools (axe, WAVE) and manual screen reader testing. Never hide focusable content with aria-hidden="true".
 
 **Psychological Principles**: Appropriate labeling reduces cognitive load (cognitive load theory). Consistent ARIA patterns build mental models (schema theory). Timely live region announcements provide situational awareness (attention theory). Clear state announcements reduce uncertainty (information theory). Logical relationships support conceptual understanding (gestalt principles).

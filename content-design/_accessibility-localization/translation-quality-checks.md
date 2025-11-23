@@ -697,6 +697,6 @@ step_7_release:
 
 ---
 
-**Accessibility Requirements**: Translation quality must maintain or improve accessibility compliance. Ensure translated text maintains WCAG 2.1 Level AA compliance. Screen reader announcements should be natural in target language. Maintain proper semantic HTML structure. Test with localized assistive technologies. Ensure translated alt text is descriptive and appropriate. Verify keyboard navigation labels are clear. Check that error messages are actionable in target language.
+**Accessibility Requirements**: Translation quality must maintain or improve accessibility compliance. Ensure translated text maintains WCAG 3.0 Level AA compliance. Screen reader announcements should be natural in target language. Maintain proper semantic HTML structure. Test with localized assistive technologies. Ensure translated alt text is descriptive and appropriate. Verify keyboard navigation labels are clear. Check that error messages are actionable in target language.
 
 **Psychological Principles**: Quality translation builds trust (reciprocity principle). Natural language reduces cognitive load (processing fluency). Cultural appropriateness increases acceptance (in-group favoritism). Consistency aids comprehension (schema congruence). Error-free content signals professionalism (halo effect). Clear communication reduces friction (cognitive ease).

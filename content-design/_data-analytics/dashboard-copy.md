@@ -244,6 +244,6 @@ dashboard_content:
 
 ---
 
-**Accessibility Requirements**: All dashboard content must support WCAG 2.1 Level AA compliance. Metric changes must be announced to screen readers using ARIA live regions. Color cannot be the only indicator of trend direction - use icons and text labels. All interactive elements must be keyboard navigable with visible focus indicators. Provide text alternatives for all data visualizations.
+**Accessibility Requirements**: All dashboard content must support WCAG 3.0 Level AA compliance. Metric changes must be announced to screen readers using ARIA live regions. Color cannot be the only indicator of trend direction - use icons and text labels. All interactive elements must be keyboard navigable with visible focus indicators. Provide text alternatives for all data visualizations.
 
 **Psychological Principles**: Progressive disclosure reduces cognitive overload (information processing theory). Comparison context provides mental anchors for interpreting numbers (anchoring effect). Consistent metric placement builds pattern recognition (recognition over recall). Clear trend indicators reduce decision-making time (cognitive ease). Visual hierarchy guides attention to most important information (selective attention).

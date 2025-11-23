@@ -489,6 +489,6 @@ customization:
 
 ---
 
-**Accessibility Requirements**: Must comply with WCAG 2.1 Level AAA Success Criteria 3.1.5 (Reading Level), 2.2.3 (No Timing), 2.2.4 (Interruptions), 3.2.5 (Change on Request), 3.3.5 (Help), and 3.3.6 (Error Prevention). Follow W3C Cognitive Accessibility Guidance and COGA (Cognitive and Learning Disabilities Accessibility) Task Force recommendations. Use plain language (grade 6-8). Provide consistent navigation, clear structure, and user control over timing and content. Test with users with cognitive disabilities across diverse conditions.
+**Accessibility Requirements**: Must comply with WCAG 3.0 Level AAA Success Criteria 3.1.5 (Reading Level), 2.2.3 (No Timing), 2.2.4 (Interruptions), 3.2.5 (Change on Request), 3.3.5 (Help), and 3.3.6 (Error Prevention). Follow W3C Cognitive Accessibility Guidance and COGA (Cognitive and Learning Disabilities Accessibility) Task Force recommendations. Use plain language (grade 6-8). Provide consistent navigation, clear structure, and user control over timing and content. Test with users with cognitive disabilities across diverse conditions.
 
 **Psychological Principles**: Cognitive load theory guides chunking and simplification. Working memory limitations inform step-by-step design. Attention restoration theory supports distraction reduction. Predictability reduces anxiety (uncertainty reduction). Clear feedback supports learning (operant conditioning). User control increases confidence (locus of control). Consistent patterns build automaticity (procedural learning).

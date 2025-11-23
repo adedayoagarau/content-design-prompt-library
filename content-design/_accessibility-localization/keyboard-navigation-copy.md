@@ -212,7 +212,7 @@ focus_management_patterns:
 
 visual_focus_indicators:
   requirements:
-    contrast_ratio: "3:1 minimum against background (WCAG 2.1 Level AA)"
+    contrast_ratio: "3:1 minimum against background (WCAG 3.0 Level AA)"
     thickness: "2px minimum outline or border"
     shape: "Complete outline around element"
     color: "High contrast, typically blue or brand color"
@@ -392,6 +392,6 @@ in_app_instructions:
 
 ---
 
-**Accessibility Requirements**: Must comply with WCAG 2.1 Success Criteria 2.1.1 (Keyboard), 2.1.2 (No Keyboard Trap), 2.4.3 (Focus Order), 2.4.7 (Focus Visible), and 3.2.1 (On Focus). Follow WAI-ARIA Authoring Practices Guide 1.2 for keyboard interaction patterns. Ensure all functionality available via mouse is also available via keyboard. Provide visible focus indicators with 3:1 contrast ratio. Test with keyboard-only navigation (no mouse) and document all custom keyboard patterns.
+**Accessibility Requirements**: Must comply with WCAG 3.0 Success Criteria 2.1.1 (Keyboard), 2.1.2 (No Keyboard Trap), 2.4.3 (Focus Order), 2.4.7 (Focus Visible), and 3.2.1 (On Focus). Follow WAI-ARIA Authoring Practices Guide 1.2 for keyboard interaction patterns. Ensure all functionality available via mouse is also available via keyboard. Provide visible focus indicators with 3:1 contrast ratio. Test with keyboard-only navigation (no mouse) and document all custom keyboard patterns.
 
 **Psychological Principles**: Discoverability through progressive disclosure (information foraging). Consistency builds muscle memory (procedural memory). Clear feedback confirms actions (action-perception loop). Predictable patterns reduce cognitive load (schema theory). Escape hatches reduce anxiety (sense of control).

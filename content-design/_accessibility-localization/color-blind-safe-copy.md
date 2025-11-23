@@ -265,7 +265,7 @@ color_palette_selection:
       large_text: "4.5:1 contrast ratio"
 
     non_text:
-      ui_components: "3:1 contrast ratio (WCAG 2.1)"
+      ui_components: "3:1 contrast ratio (WCAG 3.0)"
       graphical_objects: "3:1 contrast ratio"
 
 testing_and_validation:
@@ -502,6 +502,6 @@ error_summary:
 
 ---
 
-**Accessibility Requirements**: Must comply with WCAG 2.1 Success Criterion 1.4.1 (Use of Color) Level A and 1.4.11 (Non-text Contrast) Level AA. Never use color as the only visual means of conveying information. Ensure 3:1 contrast ratio for UI components and graphical objects. Provide text alternatives, icons, patterns, shapes, or position to supplement color coding. Test with color-blind simulation tools (ColorOracle, Coblis). Validate with users who have color vision deficiencies across protanopia, deuteranopia, and tritanopia.
+**Accessibility Requirements**: Must comply with WCAG 3.0 Success Criterion 1.4.1 (Use of Color) Level A and 1.4.11 (Non-text Contrast) Level AA. Never use color as the only visual means of conveying information. Ensure 3:1 contrast ratio for UI components and graphical objects. Provide text alternatives, icons, patterns, shapes, or position to supplement color coding. Test with color-blind simulation tools (ColorOracle, Coblis). Validate with users who have color vision deficiencies across protanopia, deuteranopia, and tritanopia.
 
 **Psychological Principles**: Redundant coding improves information processing (dual coding theory). Multiple sensory channels increase accessibility (modality effect). Consistent patterns reduce cognitive load (schema theory). Clear distinctions support rapid recognition (feature integration theory). Inclusive design benefits all users (universal design principle).

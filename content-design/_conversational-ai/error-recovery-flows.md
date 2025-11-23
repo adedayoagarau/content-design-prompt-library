@@ -199,6 +199,6 @@ error_recovery_system:
 
 ---
 
-**Accessibility Requirements**: Error recovery must never penalize users for unclear input. Provide multiple input modalities. Support error recovery for users with speech impairments or limited typing ability. WCAG 2.1 Level AA: clear error identification and suggestion for correction.
+**Accessibility Requirements**: Error recovery must never penalize users for unclear input. Provide multiple input modalities. Support error recovery for users with speech impairments or limited typing ability. WCAG 3.0 Level AA: clear error identification and suggestion for correction.
 
 **Psychological Principles**: Minimize face-threat (politeness theory). Acknowledge without blame (loss aversion). Provide clear path forward to reduce anxiety. Escalate before user frustration peaks (emotional design).

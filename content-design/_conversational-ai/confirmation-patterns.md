@@ -242,6 +242,6 @@ confirmation_system:
 
 ---
 
-**Accessibility Requirements**: Confirmation dialogs must be keyboard navigable. Default focus on safe option. Clear visual hierarchy. Screen reader announces risks. Support undo for reversible actions. WCAG 2.1 Level AA: sufficient time to read and act.
+**Accessibility Requirements**: Confirmation dialogs must be keyboard navigable. Default focus on safe option. Clear visual hierarchy. Screen reader announces risks. Support undo for reversible actions. WCAG 3.0 Level AA: sufficient time to read and act.
 
 **Psychological Principles**: Explicit confirmation for high-stakes actions prevents errors (error prevention). Progressive confirmation reduces cognitive load (chunking). Clear consequences reduce anxiety (transparency). Easy undo encourages exploration (safety).

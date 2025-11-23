@@ -13,7 +13,7 @@ This library provides **battle-tested prompt templates** for generating high-qua
 - ✅ **Comprehensive variable definitions** for customization
 - ✅ **Multiple example implementations** to guide usage
 - ✅ **Structured output formats** (JSON/YAML schemas)
-- ✅ **Accessibility requirements** (WCAG 2.1 Level AA)
+- ✅ **Accessibility requirements** (WCAG 3.0 Level AA)
 - ✅ **Psychological principles** applied to content design
 - ✅ **Edge case handling** for real-world scenarios
 
@@ -284,7 +284,7 @@ Result: Complete feature content system
 - ✍️ Generate microcopy variations for A/B testing
 - 🎯 Create comprehensive error message systems
 - 🔄 Design consistent voice & tone across products
-- ♿ Ensure WCAG 2.1 accessibility compliance
+- ♿ Ensure WCAG 3.0 accessibility compliance
 - 🌍 Prepare content for localization
 
 ### For Product Teams
@@ -403,7 +403,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 - ✅ Phase 1: Core Patterns (14 prompts)
 - ✅ Phase 2: Expansion (86 prompts)
 - ✅ 100+ prompts across 6 categories
-- ✅ WCAG 2.1 Level AA accessibility
+- ✅ WCAG 3.0 Level AA accessibility
 - ✅ Structured output formats (JSON/YAML)
 
 ### 🚧 In Progress

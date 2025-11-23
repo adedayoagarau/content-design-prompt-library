@@ -709,6 +709,6 @@ implementation:
 
 ---
 
-**Accessibility Requirements**: Text expansion planning must maintain WCAG 2.1 Level AA compliance in all languages. Ensure expanded text doesn't reduce font size below minimum readable size (typically 14px for body text). Never truncate critical information (error messages, warnings). Provide full text via tooltip or expansion when truncation necessary. Test with actual screen readers in target languages. Ensure expanded text maintains minimum touch target size of 44x44px for interactive elements.
+**Accessibility Requirements**: Text expansion planning must maintain WCAG 3.0 Level AA compliance in all languages. Ensure expanded text doesn't reduce font size below minimum readable size (typically 14px for body text). Never truncate critical information (error messages, warnings). Provide full text via tooltip or expansion when truncation necessary. Test with actual screen readers in target languages. Ensure expanded text maintains minimum touch target size of 44x44px for interactive elements.
 
 **Psychological Principles**: Processing fluency affected by text layout (fluency effect). Truncated text increases cognitive load (cognitive load theory). Predictable layouts build trust (consistency principle). Clear complete messages reduce anxiety (uncertainty reduction). Language-specific layouts feel natural (cultural schema theory). Adequate spacing improves readability (Gestalt principles).

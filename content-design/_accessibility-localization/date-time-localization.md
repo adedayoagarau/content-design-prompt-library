@@ -538,6 +538,6 @@ post_timestamp:
 
 ---
 
-**Accessibility Requirements**: Date and time content must comply with WCAG 2.1 Level AA. Use semantic HTML5 `<time>` element with machine-readable `datetime` attribute for screen readers and assistive technologies. Provide both relative and absolute time formats. Ensure timezone is always clear when time is critical. Use clear, unambiguous date formats (month names preferred over numbers). Support user preferences for date/time format. Test with screen readers in multiple locales to ensure natural announcement.
+**Accessibility Requirements**: Date and time content must comply with WCAG 3.0 Level AA. Use semantic HTML5 `<time>` element with machine-readable `datetime` attribute for screen readers and assistive technologies. Provide both relative and absolute time formats. Ensure timezone is always clear when time is critical. Use clear, unambiguous date formats (month names preferred over numbers). Support user preferences for date/time format. Test with screen readers in multiple locales to ensure natural announcement.
 
 **Psychological Principles**: Familiar formats reduce cognitive load (processing fluency effect). Clear timezone indication reduces anxiety (uncertainty reduction). Relative time feels more immediate (recency effect). Absolute dates provide certainty (need for closure). Cultural conventions build trust (schema congruence). Unambiguous formats prevent errors (error prevention principle).

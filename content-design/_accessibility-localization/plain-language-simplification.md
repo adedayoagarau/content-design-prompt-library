@@ -30,7 +30,7 @@ Primary purpose: {{primary_purpose}}
 Information priority: {{information_priority}}
 Action required: {{action_required}}
 Tone: {{tone}} (formal/conversational/empathetic/instructional)
-Accessibility level: {{accessibility_level}} (WCAG 2.1 Level AAA guideline 3.1.5)
+Accessibility level: {{accessibility_level}} (WCAG 3.0 Level AAA guideline 3.1.5)
 
 === OUTPUT REQUIREMENTS ===
 
@@ -401,6 +401,6 @@ preserved_elements:
 
 ---
 
-**Accessibility Requirements**: Should aim for WCAG 2.1 Success Criterion 3.1.5 Reading Level (AAA) - provide supplemental content or alternative version for text requiring greater than lower secondary education reading ability. Use common words, short sentences, and active voice. Provide definitions for necessary technical terms. Test with readability analyzers (target Flesch-Kincaid Grade 6-8). Validate with actual users, especially those with cognitive disabilities. Comply with Plain Writing Act requirements for government content.
+**Accessibility Requirements**: Should aim for WCAG 3.0 Success Criterion 3.1.5 Reading Level (AAA) - provide supplemental content or alternative version for text requiring greater than lower secondary education reading ability. Use common words, short sentences, and active voice. Provide definitions for necessary technical terms. Test with readability analyzers (target Flesch-Kincaid Grade 6-8). Validate with actual users, especially those with cognitive disabilities. Comply with Plain Writing Act requirements for government content.
 
 **Psychological Principles**: Cognitive load reduction through simplified syntax (working memory limits). Chunking for better retention (Miller's Law). Familiarity increases processing fluency (processing fluency effect). Active voice clarifies agency (actor-observer bias). Concrete language over abstract improves comprehension (concreteness effect). Redundancy aids learning for diverse abilities (redundancy principle).

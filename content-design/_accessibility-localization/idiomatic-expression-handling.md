@@ -597,6 +597,6 @@ replacements:
 
 ---
 
-**Accessibility Requirements**: Idiomatic expressions can create barriers for users with cognitive disabilities, non-native speakers, and screen reader users. Follow WCAG 2.1 Success Criterion 3.1.3 (Unusual Words) Level AAA - provide definitions for idioms and unusual words. Prefer plain language that is universally understandable. When idioms must be used, provide context clues. Test content with non-native speakers and users with cognitive disabilities to ensure comprehension.
+**Accessibility Requirements**: Idiomatic expressions can create barriers for users with cognitive disabilities, non-native speakers, and screen reader users. Follow WCAG 3.0 Success Criterion 3.1.3 (Unusual Words) Level AAA - provide definitions for idioms and unusual words. Prefer plain language that is universally understandable. When idioms must be used, provide context clues. Test content with non-native speakers and users with cognitive disabilities to ensure comprehension.
 
 **Psychological Principles**: Linguistic relativity affects how expressions are perceived (Sapir-Whorf hypothesis). Familiar language increases processing fluency (fluency effect). Unfamiliar idioms increase cognitive load (cognitive load theory). Plain language improves comprehension for all users (universal design). Cultural schema affects interpretation (schema theory). In-group language builds connection but excludes others (in-group/out-group dynamics).
