@@ -1,10 +1,10 @@
 # Content Design Prompt Library
 
-> **100+ production-ready prompts** for content designers, UX writers, and conversation designers working with AI systems. Battle-tested patterns from X.AI (Grok), Google (Gemini), and Calm.
+> **152 production-ready prompts** for content designers, UX writers, and conversation designers working with AI systems. Battle-tested patterns from X.AI (Grok), Google (Gemini), and Calm.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
-[![Prompts: 100+](https://img.shields.io/badge/prompts-100+-blue.svg)](content-design/)
+[![Prompts: 152](https://img.shields.io/badge/prompts-152-blue.svg)](content-design/)
 
 ## 🎯 Purpose
 
@@ -23,10 +23,10 @@ This library provides **battle-tested prompt templates** for generating high-qua
 
 | Metric | Value |
 |--------|-------|
-| **Total Prompts** | 100+ |
-| **Categories** | 6 |
-| **Words of Guidance** | 60,000+ |
-| **Examples Included** | 200+ |
+| **Total Prompts** | 152 |
+| **Categories** | 11 |
+| **Words of Guidance** | 95,000+ |
+| **Examples Included** | 300+ |
 | **Production-Ready** | ✓ 100% |
 
 ---
@@ -162,6 +162,86 @@ Dashboard, reporting, and data visualization content:
 - [**Comparison Mode Copy**](content-design/_data-analytics/comparison-mode-copy.md) - Compare data sets meaningfully
 - [**Insight Summaries**](content-design/_data-analytics/insight-summaries.md) - Translate data into actionable insights
 - [**Anomaly Detection Alerts**](content-design/_data-analytics/anomaly-detection-alerts.md) - Surface unusual patterns
+
+---
+
+### ✅ Phase 3: Advanced Patterns (52 Prompts) - **COMPLETE!**
+
+#### 🎨 Brand Voice & Tone (2 prompts)
+Comprehensive frameworks for brand personality and editorial standards:
+
+- [**Voice & Tone Guide**](content-design/_brand-voice-tone/voice-tone-guide.md) - Build complete brand voice framework with personality dimensions, contextual calibration, and channel-specific guidance
+- [**Style Guide Creation**](content-design/_brand-voice-tone/style-guide-creation.md) - Create comprehensive editorial style guide with grammar rules, formatting conventions, and brand-specific guidelines
+
+#### 🧭 Navigation & Wayfinding (10 prompts)
+Help users find their way through digital products:
+
+- [**Breadcrumb Trails**](content-design/_navigation-wayfinding/breadcrumb-trails.md) - Design clear location indicators
+- [**Navigation Menu Labels**](content-design/_navigation-wayfinding/navigation-menu-labels.md) - Create scannable, predictable navigation
+- [**Back/Forward Navigation**](content-design/_navigation-wayfinding/back-forward-navigation.md) - Contextual navigation controls
+- [**Site Map Content**](content-design/_navigation-wayfinding/site-map-content.md) - Organize and label information architecture
+- [**Footer Navigation**](content-design/_navigation-wayfinding/footer-navigation.md) - Secondary navigation that adds value
+- [**Mega Menu Organization**](content-design/_navigation-wayfinding/mega-menu-organization.md) - Handle complex hierarchies clearly
+- [**Mobile Navigation Patterns**](content-design/_navigation-wayfinding/mobile-navigation-patterns.md) - Touch-optimized navigation
+- [**Pagination Copy**](content-design/_navigation-wayfinding/pagination-copy.md) - Show users where they are in lists
+- [**Tab Navigation Patterns**](content-design/_navigation-wayfinding/tab-navigation-patterns.md) - Clear, scannable content organization
+- [**Sidebar Navigation**](content-design/_navigation-wayfinding/sidebar-navigation.md) - Persistent navigation patterns
+
+#### 🔍 Search & Discovery (8 prompts)
+Help users find what they need quickly:
+
+- [**Search Placeholder Text**](content-design/_search-discovery/search-placeholder-text.md) - Suggest search capabilities and examples
+- [**Zero Results Messaging**](content-design/_search-discovery/zero-results-messaging.md) - Guide users when searches fail
+- [**Search Suggestions**](content-design/_search-discovery/search-suggestions.md) - Autocomplete and related queries
+- [**Filter Labels & Chips**](content-design/_search-discovery/filter-labels-chips.md) - Clear categorization and refinement options
+- [**Sort Dropdown Options**](content-design/_search-discovery/sort-dropdown-options.md) - Intuitive data organization controls
+- [**Search Result Descriptions**](content-design/_search-discovery/search-result-descriptions.md) - Informative result summaries
+- [**Did You Mean Corrections**](content-design/_search-discovery/did-you-mean-corrections.md) - Spell-check and query suggestions
+- [**Advanced Search UI**](content-design/_search-discovery/advanced-search-ui.md) - Teach power-user search techniques
+
+#### ⚙️ Settings & Preferences (10 prompts)
+Configuration interfaces that don't overwhelm:
+
+- [**Settings Category Labels**](content-design/_settings-preferences/settings-category-labels.md) - Group and label settings logically
+- [**Privacy Control Copy**](content-design/_settings-preferences/privacy-control-copy.md) - Explain data controls clearly
+- [**Notification Settings**](content-design/_settings-preferences/notification-settings.md) - Granular control without confusion
+- [**Account Settings Sections**](content-design/_settings-preferences/account-settings-sections.md) - Profile and security management
+- [**Preference Explanations**](content-design/_settings-preferences/preference-explanations.md) - Clarify what each option does
+- [**Default Value Explanations**](content-design/_settings-preferences/default-value-explanations.md) - Why defaults are set
+- [**Data Management Options**](content-design/_settings-preferences/data-management-options.md) - Import, export, and deletion controls
+- [**Settings Search Labels**](content-design/_settings-preferences/settings-search-labels.md) - Help users find specific settings
+- [**Settings Save Patterns**](content-design/_settings-preferences/settings-save-patterns.md) - Auto-save vs manual confirmation
+- [**Toggle Descriptions**](content-design/_settings-preferences/toggle-descriptions.md) - Binary switch explanations
+
+#### 📚 Help & Documentation (12 prompts)
+Self-service support content that actually helps:
+
+- [**FAQ Content**](content-design/_help-documentation/faq-content.md) - Answer common questions clearly
+- [**Knowledge Base Articles**](content-design/_help-documentation/knowledge-base-articles.md) - Scannable, searchable documentation
+- [**Video Tutorial Scripts**](content-design/_help-documentation/video-tutorial-scripts.md) - Step-by-step visual guidance
+- [**Troubleshooting Guides**](content-design/_help-documentation/troubleshooting-guides.md) - Diagnostic decision trees
+- [**API Documentation**](content-design/_help-documentation/api-documentation.md) - Developer-friendly reference
+- [**Getting Started Guides**](content-design/_help-documentation/getting-started-guides.md) - Quick-start onboarding
+- [**Interactive Walkthroughs**](content-design/_help-documentation/interactive-walkthroughs.md) - Guided product tours
+- [**Contextual Help Panels**](content-design/_help-documentation/contextual-help-panels.md) - In-context assistance
+- [**Support Ticket Forms**](content-design/_help-documentation/support-ticket-forms.md) - Efficient problem reporting
+- [**Chatbot Help Integration**](content-design/_help-documentation/chatbot-help-integration.md) - Conversational support
+- [**Help Search Optimization**](content-design/_help-documentation/help-search-optimization.md) - Findable help content
+- [**Tooltip & Progressive Disclosure**](content-design/_help-documentation/tooltip-progressive-disclosure.md) - Layered information architecture
+
+#### 💳 Transactional Flows (10 prompts)
+E-commerce and payment experiences:
+
+- [**Checkout Step Labels**](content-design/_transactional-flows/checkout-step-labels.md) - Clear purchase flow navigation
+- [**Cart Abandonment Recovery**](content-design/_transactional-flows/cart-abandonment-recovery.md) - Re-engage shoppers who didn't complete purchase
+- [**Order Tracking Updates**](content-design/_transactional-flows/order-tracking-updates.md) - Shipping status communications
+- [**Shipping Options**](content-design/_transactional-flows/shipping-options.md) - Delivery choices with cost/time tradeoffs
+- [**Payment Method Labels**](content-design/_transactional-flows/payment-method-labels.md) - Clear, trustworthy payment UI
+- [**Order Confirmation**](content-design/_transactional-flows/order-confirmation.md) - Post-purchase reassurance
+- [**Receipt & Invoice Copy**](content-design/_transactional-flows/receipt-invoice-copy.md) - Transaction records that inform
+- [**Refund Process Messaging**](content-design/_transactional-flows/refund-process-messaging.md) - Customer-friendly return policies
+- [**Subscription Management**](content-design/_transactional-flows/subscription-management.md) - Billing and plan controls
+- [**Billing Statements**](content-design/_transactional-flows/billing-statements.md) - Clear invoice and payment history
 
 ---
 
@@ -402,9 +482,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 
 - ✅ Phase 1: Core Patterns (14 prompts)
 - ✅ Phase 2: Expansion (86 prompts)
-- ✅ 100+ prompts across 6 categories
+- ✅ Phase 3: Advanced Patterns (52 prompts)
+- ✅ 152 prompts across 11 categories
 - ✅ WCAG 3.0 Level AA accessibility
 - ✅ Structured output formats (JSON/YAML)
+- ✅ Comprehensive brand voice & tone frameworks
+- ✅ Complete navigation, search, settings, help, and transactional patterns
 
 ### 🚧 In Progress
 
@@ -413,9 +496,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 - 🔨 Community templates gallery
 - 🔨 API for programmatic access
 
-### 📅 Planned (Phase 3)
+### 📅 Planned (Phase 4)
 
 - 📋 Industry-specific prompts (Healthcare, Finance, E-commerce)
+- 📋 Mobile-specific content design patterns
 - 📋 Integration examples (Figma, Notion, VS Code)
 - 📋 Video tutorials and workshops
 - 📋 Certification program for contributors
@@ -489,7 +573,8 @@ If this library helps your work:
 **Library Growth:**
 - 🚀 Launch: 14 prompts (November 2025)
 - 📈 Phase 2: 100 prompts (November 2025)
-- 🎯 Target: 150+ prompts by 2026
+- 🎯 Phase 3: 152 prompts (November 2025)
+- 🌟 Target achieved: 150+ prompts!
 
 **Community:**
 - ⭐ GitHub Stars: Growing
@@ -530,16 +615,32 @@ https://github.com/adedayoagarau/content-design-prompt-library
 
 ## 🔄 Updates & Changelog
 
-**Latest Version: 2.0.0** (November 2025)
+**Latest Version: 3.0.0** (November 2025)
 
-### What's New
+### What's New in 3.0.0
 
-- ✨ **86 new prompts** across 4 categories
+- ✨ **52 new prompts** across 6 advanced categories
+- 🎨 Brand Voice & Tone frameworks (2 comprehensive prompts)
+- 🧭 Complete Navigation & Wayfinding category (10 prompts)
+- 🔍 Complete Search & Discovery category (8 prompts)
+- ⚙️ Complete Settings & Preferences category (10 prompts)
+- 📚 Complete Help & Documentation category (12 prompts)
+- 💳 Complete Transactional Flows category (10 prompts)
+- 📚 10x library growth (from 14 to 152 prompts)
+
+### Previous Versions
+
+**Version 2.0.0** (November 2025)
+- ✨ 86 new prompts across 4 categories
 - 🤖 Complete Conversational AI category (30 prompts)
 - 📱 Complete Product Content category (25 prompts)
 - ♿ Complete Accessibility & Localization category (20 prompts)
 - 📊 Complete Data & Analytics category (11 prompts)
-- 📚 6x library growth (from 14 to 100+ prompts)
+
+**Version 1.0.0** (November 2025)
+- 🚀 Initial release with 14 core prompts
+- 🎨 Content Design Foundations (7 prompts)
+- 🔘 Interactive Components (7 prompts)
 
 See [CHANGELOG.md](CHANGELOG.md) for full version history.
 
@@ -547,4 +648,4 @@ See [CHANGELOG.md](CHANGELOG.md) for full version history.
 
 **Note:** This is a living library. Prompts are continuously updated based on community feedback, new research, and evolving best practices.
 
-**Last updated:** November 23, 2025 | **Version:** 2.0.0 | **Prompts:** 100+
+**Last updated:** November 23, 2025 | **Version:** 3.0.0 | **Prompts:** 152
