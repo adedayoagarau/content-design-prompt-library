@@ -319,7 +319,12 @@ This library is built on proven frameworks and real-world experience:
 
 ### Industry Standards
 - **Nielsen Norman Group** - Usability heuristics and UX patterns
-- **WCAG 2.1 Level AA** - Web accessibility guidelines
+- **Web Accessibility Guidelines**
+  - [WCAG 3.0](https://w3c.github.io/wcag3/guidelines/) (Editor's Draft) - Latest accessibility standards
+  - [WCAG 2.1 Level AA](https://www.w3.org/WAI/WCAG21/quickref/) - Current compliance baseline
+  - [HTML Living Standard](https://www.w3.org/TR/html/) - Modern HTML specifications
+  - [CSS Snapshot 2025](https://www.w3.org/TR/css-2025/) - Latest CSS features
+  - [Media Queries Level 3](https://www.w3.org/TR/mediaqueries-3/) - Responsive design standards
 - **Material Design** - Google's content principles
 - **Apple HIG** - Human Interface Guidelines
 - **Conversational UX** - Google's conversation design guidelines
@@ -429,10 +434,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### Created By
 
-**Adedayo Ayorinde**
+**Adedayo Agarau**
 - Senior Content & Conversation Designer
 - Former: X.AI (Grok), Google (Gemini), Calm
 - Editor-in-Chief, Agbowó Magazine
+- Email: adedayoagarau@gmail.com
 
 ### Inspired By
 
@@ -460,9 +466,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### Connect
 
-- 💼 **LinkedIn:** [Adedayo Ayorinde](https://linkedin.com/in/adedayoagarau)
+- 💼 **LinkedIn:** [Adedayo Agarau](https://www.linkedin.com/in/adedayoagarau)
 - 🐦 **Twitter/X:** Share with #ContentDesignPrompts
-- 📧 **Email:** For professional inquiries
+- 📧 **Email:** adedayoagarau@gmail.com
 
 ---
 
@@ -516,7 +522,7 @@ A: Every prompt includes 2-3 complete examples with realistic scenarios.
 **Q: How do I cite this library?**
 A:
 ```
-Content Design Prompt Library (2025). Adedayo Ayorinde.
+Content Design Prompt Library (2025). Adedayo Agarau.
 https://github.com/adedayoagarau/content-design-prompt-library
 ```
 
