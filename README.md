@@ -1,6 +1,6 @@
 # Content Design Prompt Library
 
-> **152 production-ready prompts** for content designers, UX writers, and conversation designers working with AI systems. Battle-tested patterns from X.AI (Grok), Google (Gemini), and Calm.
+> **152 production-ready prompts** for content designers, UX writers, and conversation designers working with AI systems. 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
