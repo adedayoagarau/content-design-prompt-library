@@ -6,6 +6,11 @@
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 [![Prompts: 152](https://img.shields.io/badge/prompts-152-blue.svg)](content-design/)
 
+[![Works with Claude](https://img.shields.io/badge/works%20with-Claude-orange.svg)]()
+[![Works with ChatGPT](https://img.shields.io/badge/works%20with-ChatGPT-green.svg)]()
+[![Works with Copilot](https://img.shields.io/badge/works%20with-Microsoft%20Copilot-0078D4.svg)]()
+[![Works with Gemini](https://img.shields.io/badge/works%20with-Gemini-4285F4.svg)]()
+
 ## 🎯 Purpose
 
 This library provides **battle-tested prompt templates** for generating high-quality content across digital products, conversational AI, and data-driven interfaces. Each prompt includes:
@@ -283,6 +288,7 @@ user_expertise: "novice"
 **4. Copy to Your AI System**
 
 Use with any LLM:
+- **Microsoft Copilot** - Works in Copilot Chat, Copilot Studio, and Microsoft 365 (Word, PowerPoint, Teams)
 - **Claude** (Anthropic) - Recommended for long prompts
 - **ChatGPT** (OpenAI)
 - **Gemini** (Google)
@@ -590,7 +596,10 @@ If this library helps your work:
 A: Yes! MIT licensed - use freely in personal and commercial projects.
 
 **Q: Which LLM works best?**
-A: Claude (Anthropic) handles long prompts well. ChatGPT and Gemini also work great.
+A: All major LLMs work great! Microsoft Copilot excels for Microsoft 365 integration. Claude handles long prompts well. ChatGPT and Gemini also perform excellently.
+
+**Q: Does this work with Microsoft Copilot?**
+A: Yes! All prompts work seamlessly with Microsoft Copilot (Chat, Studio, and Microsoft 365). Use them directly in Word, PowerPoint, Teams, or standalone Copilot Chat. Copilot's structured output capabilities make it excellent for generating production-ready content from these templates.
 
 **Q: Can I modify the prompts?**
 A: Absolutely! Customize for your brand, product, and users.
