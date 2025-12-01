@@ -1,0 +1,25 @@
+# Generation artifacts
+GENERATION_*.md
+*.sh
+generate_prompts.py
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
