@@ -24,14 +24,29 @@ This library provides **battle-tested prompt templates** for generating high-qua
 
 ---
 
+## 🚀 Koroba - Content Alignment Tool
+
+**NEW!** We built [Koroba](koroba/) - a web application that uses all 282 prompts from this library to analyze your content with visual feedback.
+
+### Features
+- 🎭 **Multi-Parameter Analysis**: Voice/tone, accessibility, structure, psychology, platform optimization, business clarity
+- 📊 **Visual Feedback**: Animated gauges, sliders, and color-coded progress bars
+- ✨ **AI-Powered Rewrites**: Get suggested improvements when alignment is below 70%
+- 🎯 **9 Content Types**: LinkedIn, Twitter, Blog, Marketing, Microcopy, Flows, Email, Product, Docs
+- ♿ **WCAG 3.0 Analysis**: Built-in accessibility evaluation
+
+**[Try Koroba →](koroba/)** | **[View Demo](koroba/README.md)** | **[Deploy Guide](koroba/DEPLOYMENT.md)**
+
+---
+
 ## 📊 Library Stats
 
 | Metric | Value |
 |--------|-------|
-| **Total Prompts** | 152 |
-| **Categories** | 11 |
-| **Words of Guidance** | 95,000+ |
-| **Examples Included** | 300+ |
+| **Total Prompts** | 282 (152 Content Design + 130 Content Architect) |
+| **Categories** | 27 (11 Content Design + 16 Content Architect) |
+| **Words of Guidance** | 190,000+ |
+| **Examples Included** | 600+ |
 | **Production-Ready** | ✓ 100% |
 
 ---
