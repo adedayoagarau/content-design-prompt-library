@@ -5,12 +5,13 @@ import {
   ParameterScore,
   AnalysisResult,
 } from "../types";
+import { calculateReadabilityMetrics, extractContentMetadata } from "./contentExtractor";
 
 const client = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY || "",
 });
 
-// Map our 282 prompts to analysis parameters
+// Comprehensive parameter prompts covering all 13 analysis dimensions
 const PARAMETER_PROMPTS: Record<AnalysisParameter, string> = {
   "voice-tone": `Analyze the voice and tone of this content. Evaluate:
 - Brand alignment and consistency
@@ -65,6 +66,94 @@ Provide a score (0-100) and platform-specific recommendations.`,
 - Measurable outcomes mentioned
 
 Provide a score (0-100) and business messaging improvements.`,
+
+  "temperature": `Analyze the content temperature (hot vs. cold). Evaluate:
+- Urgency signals (limited time, scarcity, FOMO)
+- Emotional intensity (exclamation marks, power words)
+- Action density (imperative verbs, CTAs)
+- Time sensitivity vs evergreen nature
+- Excitement level vs calm analysis
+
+Rate from 0-100 where:
+- 0-25: Ice Cold (analytical, timeless, data-driven)
+- 25-40: Cold (informative, educational)
+- 40-55: Cool (balanced, professional)
+- 55-70: Warm (engaging, friendly)
+- 70-85: Hot (urgent, exciting)
+- 85-100: Blazing (extremely urgent, FOMO-driven)
+
+Provide detailed temperature analysis with specific indicators.`,
+
+  "readability": `Analyze readability and complexity. Evaluate:
+- Sentence length and structure
+- Word choice complexity
+- Jargon and technical terms
+- Active vs passive voice ratio
+- Reading grade level
+- Clarity for target audience
+
+Provide a score (0-100) where higher = more readable, and include:
+- Flesch-Kincaid grade level
+- Average sentence length
+- Jargon density percentage
+- Active voice percentage`,
+
+  "engagement": `Analyze engagement potential. Evaluate:
+- Hook strength (opening lines)
+- Curiosity gaps and open loops
+- Story elements present
+- Shareability factors
+- Discussion/comment triggers
+- Emotional connection points
+- Pattern interrupts
+
+Provide a score (0-100) for engagement potential with specific elements identified.`,
+
+  "trust": `Analyze trust and credibility. Evaluate:
+- Social proof density (testimonials, numbers, results)
+- Data and statistics usage
+- Expertise signals (credentials, experience)
+- Transparency markers (honest limitations, disclaimers)
+- Authority indicators (certifications, affiliations)
+- Source citations
+- Balanced perspective
+
+Provide a score (0-100) for trust level with specific credibility markers.`,
+
+  "conversion": `Analyze conversion optimization. Evaluate:
+- CTA clarity and prominence
+- Value proposition strength
+- Friction points in copy
+- Benefit-to-feature ratio
+- Objection handling
+- Urgency vs scarcity balance
+- Risk reversal elements
+- Next step clarity
+
+Provide a score (0-100) for conversion potential with specific optimization recommendations.`,
+
+  "brand-consistency": `Analyze brand consistency. Evaluate:
+- Voice deviation from brand guidelines
+- Terminology adherence
+- Formatting consistency
+- Tone spectrum alignment
+- Competitive differentiation
+- Brand personality expression
+- Message alignment
+
+Provide a score (0-100) for brand consistency with deviation points noted.`,
+
+  "seo": `Analyze SEO and discoverability. Evaluate:
+- Keyword density and placement
+- Semantic richness
+- Header hierarchy
+- Meta-worthy content quality
+- Internal link opportunities
+- Topic depth
+- Answer-focused content
+- Long-tail keyword potential
+
+Provide a score (0-100) for SEO optimization with primary keywords identified.`,
 };
 
 export async function analyzeContent(
@@ -74,6 +163,9 @@ export async function analyzeContent(
   voiceGuidelines?: string
 ): Promise<AnalysisResult> {
   const parameterScores: ParameterScore[] = [];
+
+  // Calculate content metadata
+  const metadata = extractContentMetadata(content);
 
   // Analyze each parameter
   for (const parameter of parameters) {
@@ -95,7 +187,8 @@ Return your analysis in this JSON format:
     {
       "text": "<problematic text>",
       "reason": "<why it's an issue>",
-      "suggestion": "<how to improve>"
+      "suggestion": "<how to improve>",
+      "severity": "low|medium|high"
     }
   ],
   "strengths": ["<strength 1>", "<strength 2>"]
@@ -210,5 +303,6 @@ Provide ONLY the rewritten content, no explanations.`;
     parameterScores,
     suggestedRewrite,
     summary,
+    contentMetadata: metadata,
   };
 }
