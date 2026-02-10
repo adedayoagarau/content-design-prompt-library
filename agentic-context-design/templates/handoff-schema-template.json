@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "handoff_type": "",
+  "priority": "",
+  "sending_agent": "",
+  "receiving_agent": "",
+  "timestamp": "",
+  "session_id": "",
+
+  "entity": {
+    "id": "",
+    "name": "",
+    "type": "",
+    "key_attribute": "",
+    "additional_context": ""
+  },
+
+  "triggering_event": {
+    "event_type": "",
+    "event_timestamp": "",
+    "event_source": "",
+    "description": "",
+    "root_cause": "",
+    "severity": "",
+    "policy_reference": ""
+  },
+
+  "resolution_state": {
+    "actions_completed": [],
+    "current_state": "",
+    "remaining_steps": [],
+    "blockers": []
+  },
+
+  "recipient_instructions": {
+    "primary_objective": "",
+    "constraints": [],
+    "eligibility_details": "",
+    "escalation_criteria": "",
+    "timeout_sla": ""
+  },
+
+  "context_for_recipient": {
+    "customer_emotional_state": "",
+    "interaction_history": "",
+    "tone_guidance": ""
+  }
+}
