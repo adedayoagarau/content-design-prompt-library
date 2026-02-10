@@ -1,72 +1,84 @@
 # Context Design for Agentic AI — Prompts, Templates & Examples
 
-Companion resources for the article **"Context Design for Agentic AI"** by Adedayo Agarau — the third installment in the Context Design series.
+Companion resources for [**Context Design for Agentic AI: Ten Decision Points That Shape Autonomous System Behavior**](https://medium.com/@adedayoagarau/dfcfae21db66?source=friends_link&sk=7482bc7132919e850748610b09ad7999) 
 
-This collection contains reusable prompts for designing the ten decision points that shape agentic system behavior, a multi-agent handoff schema template, and a worked example using an airline rebooking agent.
+Reusable prompts for designing the eight artifacts that govern agentic system behavior. A multi-agent handoff schema template. A worked example threading an airline rebooking agent through every decision point.
 
-## Links
+---
 
-- **Article**: [Context Design for Agentic AI — add Medium link later]
-- **Series**:
-  - Article 1: [add link to first article in series]
-  - Article 2: [add link to second article in series]
+## The Series
+
+| # | Article | Link |
+|---|---------|------|
+| 1 | The Next Layer of AI Content Design: Context Design | [Read →](https://medium.com/@adedayoagarau/the-next-layer-of-ai-content-design-context-design-437f0fd42a2c) | 
+| 2 | Context Design in Practice | [Read →](https://medium.com/@adedayoagarau/context-design-in-practice-6cff6ea8d6c0) |   |
+| 3 | Context Design for Agentic AI | [Read →](https://medium.com/@adedayoagarau/dfcfae21db66?source=friends_link&sk=7482bc7132919e850748610b09ad7999) |
+
+---
 
 ## The 8 Design Artifacts
 
-These are the core artifacts covered in the article. Each has a corresponding prompt template in the `prompts/` directory:
+Each artifact maps to a decision point in the article. The `prompts/` directory contains a reusable template for generating each one.
 
-| # | Artifact | File |
-|---|----------|------|
-| 1 | Tool Access Policy | [`prompts/tool-access-policy.md`](prompts/tool-access-policy.md) |
-| 2 | Autonomy Matrix | [`prompts/autonomy-matrix.md`](prompts/autonomy-matrix.md) |
-| 3 | Working Memory Schema | [`prompts/working-memory-schema.md`](prompts/working-memory-schema.md) |
-| 4 | Failure Taxonomy | [`prompts/failure-taxonomy.md`](prompts/failure-taxonomy.md) |
-| 5 | Handoff Protocol | [`templates/handoff-schema-template.json`](templates/handoff-schema-template.json) / [`templates/handoff-schema-template.md`](templates/handoff-schema-template.md) |
-| 6 | Completion Rubric | [`prompts/completion-rubric.md`](prompts/completion-rubric.md) |
-| 7 | Constraint Specification | [`prompts/constraint-specification.md`](prompts/constraint-specification.md) |
-| 8 | Context Evolution Policy | [`prompts/context-evolution-policy.md`](prompts/context-evolution-policy.md) |
+| # | Artifact | What it governs | Template |
+|---|----------|----------------|----------|
+| 1 | Tool Access Policy | What the agent can do, under what conditions | [`prompts/tool-access-policy.md`](prompts/tool-access-policy.md) |
+| 2 | Autonomy Matrix | Which actions require which approval level | [`prompts/autonomy-matrix.md`](prompts/autonomy-matrix.md) |
+| 3 | Working Memory Schema | What persists, compresses, expires | [`prompts/working-memory-schema.md`](prompts/working-memory-schema.md) |
+| 4 | Failure Taxonomy | Failure types → recovery behaviors | [`prompts/failure-taxonomy.md`](prompts/failure-taxonomy.md) |
+| 5 | Handoff Protocol | What transfers between agents | [`templates/handoff-schema-template.json`](templates/handoff-schema-template.json) / [`.md`](templates/handoff-schema-template.md) |
+| 6 | Completion Rubric | What "done" means per task type | [`prompts/completion-rubric.md`](prompts/completion-rubric.md) |
+| 7 | Constraint Specification | Global + per-step rules | [`prompts/constraint-specification.md`](prompts/constraint-specification.md) |
+| 8 | Context Evolution Policy | What adapts vs. what requires governance | [`prompts/context-evolution-policy.md`](prompts/context-evolution-policy.md) |
+
+---
 
 ## Repository Structure
 
 ```
 agentic-context-design/
 ├── README.md
-├── prompts/
+├── prompts/                          ← Reusable prompt templates for each artifact
 │   ├── tool-access-policy.md
 │   ├── autonomy-matrix.md
-│   ├── failure-taxonomy.md
 │   ├── working-memory-schema.md
+│   ├── failure-taxonomy.md
 │   ├── constraint-specification.md
 │   ├── completion-rubric.md
 │   └── context-evolution-policy.md
-├── templates/
+├── templates/                        ← Handoff schema (JSON + Markdown)
 │   ├── handoff-schema-template.json
 │   └── handoff-schema-template.md
-└── examples/
+└── examples/                         ← Complete worked example
     └── airline-rebooking-agent/
-        ├── full-context-window.md
-        ├── tool-definitions.json
-        ├── handoff-example.json
-        ├── plan-state-example.md
-        └── scratchpad-example.md
+        ├── full-context-window.md    ← What's actually in the window at Step 4 (~20k tokens)
+        ├── tool-definitions.json     ← 8 MCP-style tool definitions
+        ├── handoff-example.json      ← Booking → compensation agent handoff
+        ├── plan-state-example.md     ← Plan evolution across 6 steps
+        └── scratchpad-example.md     ← Structured working memory at steps 1, 3, 4, 6
 ```
+
+---
 
 ## How to Use
 
-These are **starter templates** — not production-ready configurations. Here's how to get the most out of them:
+These are starter templates.
 
-1. **Pick an artifact.** Start with the design artifact most relevant to your current challenge. If you're just beginning, start with the Tool Access Policy and Autonomy Matrix — they shape every other decision.
+**Start here:** Pick the artifact closest to your current problem. If you're building a new agent, start with the **Tool Access Policy** and **Autonomy Matrix** — they shape every other decision. If you're debugging an existing one, start with the **Failure Taxonomy**.
 
-2. **Fill in your context.** Each prompt template has a "Fill in your context" section. Replace the placeholder values with your agent's specific domain, tools, and requirements.
+**Each prompt template follows the same structure:**
 
-3. **Run the prompt.** Use the filled-in prompt with your preferred LLM to generate a first draft of that artifact.
+1. A "Fill in your context" section with placeholders for your domain, tools, and requirements
+2. The prompt itself, ready to run with any LLM
+3. An output format specification
+4. Design principles for evaluating and adapting the result
 
-4. **Adapt the output.** The generated artifact is a starting point. Rename fields to match your codebase, adjust risk levels for your domain, and add constraints specific to your organization.
+**The examples directory** shows what a complete context design looks like for one domain (airline rebooking). Use it as a reference, not a template — your agent's domain will have different tools, different risk profiles, and different failure modes.
 
-5. **Version your schemas.** As your agent evolves, your context design should evolve with it. Use the `schema_version` field in handoff templates and maintain a changelog for prompt updates.
+**Version your artifacts.** Context design is living documentation. Use the `schema_version` field in handoff templates. Maintain a changelog when constraints or policies change. The article's section on context evolution explains why this matters.
 
-6. **Use the examples.** The `examples/airline-rebooking-agent/` directory shows what a complete context design looks like for one domain. Use it as a reference when building your own.
+---
 
 ## Attribution
-
-Free to use with attribution. Created by **Adedayo Agarau**.
+Free to use with attribution.
+Created by [Adedayo Agarau](https://medium.com/@adedayoagarau).
