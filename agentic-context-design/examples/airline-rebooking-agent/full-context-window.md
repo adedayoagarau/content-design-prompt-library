@@ -49,9 +49,11 @@ See tool-definitions.json for full definitions. Summary:
 6. rebook_passenger — Execute the rebooking (write operation)
 7. process_compensation — Issue compensation per policy
 8. issue_refund — Process a refund to original payment method
+9. access_payment_method — Retrieve masked payment method on file
 
 Tool risk levels: lookup/view/search = Low, calculate = Low,
-rebook = High, process_compensation = Medium, issue_refund = High
+access_payment_method = Medium, rebook = High,
+process_compensation = Medium, issue_refund = High
 ```
 
 ## 3. Task Definition (~350 tokens)

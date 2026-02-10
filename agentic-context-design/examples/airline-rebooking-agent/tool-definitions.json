@@ -268,6 +268,31 @@
         "reversible": false,
         "audit_log": true
       }
+    },
+    {
+      "name": "access_payment_method",
+      "description": "Retrieve the payment method on file for a passenger's booking. Returns masked card details sufficient for confirmation but not for direct charges. Used to verify payment method before processing fare differences or refunds.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pnr": {
+            "type": "string",
+            "description": "The booking reference"
+          },
+          "purpose": {
+            "type": "string",
+            "enum": ["fare_difference", "refund", "verification"],
+            "description": "Why the payment method is being accessed (logged for audit)"
+          }
+        },
+        "required": ["pnr", "purpose"]
+      },
+      "annotations": {
+        "risk_level": "medium",
+        "requires_confirmation": false,
+        "reversible": true,
+        "audit_log": true
+      }
     }
   ]
 }
