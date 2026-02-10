@@ -1,0 +1,298 @@
+{
+  "tools": [
+    {
+      "name": "lookup_passenger",
+      "description": "Look up a passenger record by PNR (booking reference) or by combination of last name and travel date. Returns passenger identity, loyalty status, and associated bookings.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pnr": {
+            "type": "string",
+            "description": "The 6-character booking reference (e.g., 'ABC123')"
+          },
+          "last_name": {
+            "type": "string",
+            "description": "Passenger last name (used with travel_date if PNR not available)"
+          },
+          "travel_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Travel date in YYYY-MM-DD format (used with last_name)"
+          }
+        },
+        "anyOf": [
+          { "required": ["pnr"] },
+          { "required": ["last_name", "travel_date"] }
+        ]
+      },
+      "annotations": {
+        "risk_level": "low",
+        "requires_confirmation": false,
+        "reversible": true,
+        "audit_log": true
+      }
+    },
+    {
+      "name": "view_booking_details",
+      "description": "Retrieve full booking details for a given PNR, including flight segments, cabin class, seat assignments, fare information, and payment method on file.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pnr": {
+            "type": "string",
+            "description": "The 6-character booking reference"
+          }
+        },
+        "required": ["pnr"]
+      },
+      "annotations": {
+        "risk_level": "low",
+        "requires_confirmation": false,
+        "reversible": true,
+        "audit_log": true
+      }
+    },
+    {
+      "name": "lookup_flight_status",
+      "description": "Check the current status of a specific flight, including whether it is on time, delayed, or cancelled, along with the reason and any gate or time changes.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "flight_number": {
+            "type": "string",
+            "description": "Flight number (e.g., 'UA457')"
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Flight date in YYYY-MM-DD format"
+          }
+        },
+        "required": ["flight_number", "date"]
+      },
+      "annotations": {
+        "risk_level": "low",
+        "requires_confirmation": false,
+        "reversible": true,
+        "audit_log": false
+      }
+    },
+    {
+      "name": "search_alternative_flights",
+      "description": "Search for available flights on a given route and date. Returns matching flights with availability, cabin options, fares, and on-time performance.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "Origin airport IATA code (e.g., 'SFO')"
+          },
+          "destination": {
+            "type": "string",
+            "description": "Destination airport IATA code (e.g., 'JFK')"
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Travel date in YYYY-MM-DD format"
+          },
+          "departure_window": {
+            "type": "string",
+            "description": "Preferred departure time range (e.g., '06:00-14:00')"
+          },
+          "cabin": {
+            "type": "string",
+            "enum": ["Economy", "Economy Plus", "Business", "First"],
+            "description": "Preferred cabin class"
+          },
+          "max_results": {
+            "type": "integer",
+            "default": 5,
+            "description": "Maximum number of results to return"
+          }
+        },
+        "required": ["origin", "destination", "date"]
+      },
+      "annotations": {
+        "risk_level": "low",
+        "requires_confirmation": false,
+        "reversible": true,
+        "audit_log": false
+      }
+    },
+    {
+      "name": "calculate_fare_difference",
+      "description": "Calculate the fare difference between the original booking and a proposed new flight. Returns the amount owed by or to the passenger.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "original_pnr": {
+            "type": "string",
+            "description": "The original booking reference"
+          },
+          "new_flight_number": {
+            "type": "string",
+            "description": "The proposed new flight number"
+          },
+          "new_cabin": {
+            "type": "string",
+            "enum": ["Economy", "Economy Plus", "Business", "First"],
+            "description": "Cabin class on the new flight"
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Travel date for the new flight"
+          }
+        },
+        "required": ["original_pnr", "new_flight_number", "new_cabin", "date"]
+      },
+      "annotations": {
+        "risk_level": "low",
+        "requires_confirmation": false,
+        "reversible": true,
+        "audit_log": true
+      }
+    },
+    {
+      "name": "rebook_passenger",
+      "description": "Execute a rebooking: cancel the original flight segment and confirm the passenger on a new flight. This is a write operation that modifies the booking record.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pnr": {
+            "type": "string",
+            "description": "The booking reference to modify"
+          },
+          "original_flight": {
+            "type": "string",
+            "description": "The flight number being replaced"
+          },
+          "new_flight": {
+            "type": "string",
+            "description": "The new flight number to book"
+          },
+          "cabin": {
+            "type": "string",
+            "enum": ["Economy", "Economy Plus", "Business", "First"],
+            "description": "Cabin class for the new booking"
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Travel date"
+          },
+          "fare_difference_acknowledged": {
+            "type": "boolean",
+            "description": "Whether the passenger has acknowledged any fare difference"
+          },
+          "seat_preference": {
+            "type": "string",
+            "description": "Seat preference (e.g., 'window', 'aisle', or specific seat)"
+          }
+        },
+        "required": ["pnr", "original_flight", "new_flight", "cabin", "date", "fare_difference_acknowledged"]
+      },
+      "annotations": {
+        "risk_level": "high",
+        "requires_confirmation": true,
+        "reversible": false,
+        "audit_log": true
+      }
+    },
+    {
+      "name": "process_compensation",
+      "description": "Issue compensation to a passenger per the compensation matrix. Compensation types include travel credits, vouchers (meal, lounge), and loyalty points.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pnr": {
+            "type": "string",
+            "description": "The booking reference"
+          },
+          "compensation_type": {
+            "type": "string",
+            "enum": ["travel_credit", "meal_voucher", "lounge_voucher", "loyalty_points"],
+            "description": "Type of compensation to issue"
+          },
+          "amount": {
+            "type": "number",
+            "description": "Amount for travel credits or points (not applicable for vouchers)"
+          },
+          "reason_code": {
+            "type": "string",
+            "description": "Reason code from compensation matrix (e.g., 'CANC-MECH-24H')"
+          },
+          "policy_reference": {
+            "type": "string",
+            "description": "Reference to the compensation policy applied"
+          }
+        },
+        "required": ["pnr", "compensation_type", "reason_code", "policy_reference"]
+      },
+      "annotations": {
+        "risk_level": "medium",
+        "requires_confirmation": true,
+        "reversible": true,
+        "audit_log": true
+      }
+    },
+    {
+      "name": "issue_refund",
+      "description": "Process a refund to the passenger's original payment method. Refunds are processed for fare differences, unused segments, or full cancellations.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pnr": {
+            "type": "string",
+            "description": "The booking reference"
+          },
+          "amount": {
+            "type": "number",
+            "description": "Refund amount in USD"
+          },
+          "reason": {
+            "type": "string",
+            "description": "Reason for the refund"
+          },
+          "payment_method": {
+            "type": "string",
+            "description": "Payment method to refund to (typically original payment method)"
+          }
+        },
+        "required": ["pnr", "amount", "reason"]
+      },
+      "annotations": {
+        "risk_level": "high",
+        "requires_confirmation": true,
+        "reversible": false,
+        "audit_log": true
+      }
+    },
+    {
+      "name": "access_payment_method",
+      "description": "Retrieve the payment method on file for a passenger's booking. Returns masked card details sufficient for confirmation but not for direct charges. Used to verify payment method before processing fare differences or refunds.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pnr": {
+            "type": "string",
+            "description": "The booking reference"
+          },
+          "purpose": {
+            "type": "string",
+            "enum": ["fare_difference", "refund", "verification"],
+            "description": "Why the payment method is being accessed (logged for audit)"
+          }
+        },
+        "required": ["pnr", "purpose"]
+      },
+      "annotations": {
+        "risk_level": "medium",
+        "requires_confirmation": false,
+        "reversible": true,
+        "audit_log": true
+      }
+    }
+  ]
+}

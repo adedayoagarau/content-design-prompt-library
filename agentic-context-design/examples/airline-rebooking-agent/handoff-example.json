@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "handoff_type": "specialization",
+  "priority": "high",
+  "sending_agent": "booking-agent",
+  "receiving_agent": "compensation-agent",
+  "timestamp": "2025-07-14T22:25:00Z",
+  "session_id": "sess-9f8e7d6c-5b4a-3210",
+
+  "entity": {
+    "id": "PAX-20250715-TORRES",
+    "name": "J. Torres",
+    "type": "passenger",
+    "key_attribute": "Gold loyalty member",
+    "additional_context": "Frequent flyer, 47 flights in the last 12 months. No prior compensation claims this year."
+  },
+
+  "triggering_event": {
+    "event_type": "policy_trigger",
+    "event_timestamp": "2025-07-14T22:24:45Z",
+    "event_source": "rebooking_step_completion",
+    "description": "Passenger successfully rebooked from cancelled UA 457 to AA 104. Airline-initiated cancellation triggers compensation eligibility per COMP-MATRIX-v3.2.",
+    "root_cause": "Mechanical issue on UA 457 caused airline-initiated cancellation within 24 hours of departure.",
+    "severity": "medium",
+    "policy_reference": "COMP-MATRIX-v3.2, Section 4.1 — Airline-initiated cancellation, Gold tier"
+  },
+
+  "resolution_state": {
+    "actions_completed": [
+      "Passenger identity verified (PNR ABC123)",
+      "Flight cancellation confirmed (UA 457, mechanical)",
+      "Passenger preferences collected (morning flight, arrive JFK by 18:00)",
+      "Alternative flights searched and filtered",
+      "Passenger selected AA 104 (SFO→JFK, 07:00–15:25, Economy Plus)",
+      "Fare difference of +$17.00 acknowledged and settled",
+      "Rebooking executed — new confirmation: AA 104, seat 14A"
+    ],
+    "current_state": "Passenger is rebooked and confirmed on AA 104. Compensation has not yet been processed.",
+    "remaining_steps": [
+      "Determine compensation entitlements per COMP-MATRIX-v3.2, Section 4.1",
+      "Issue $200 travel credit (cancellation within 24h of departure)",
+      "Issue lounge access voucher (Gold tier entitlement)",
+      "Assess meal voucher eligibility (delay > 4 hours from original departure)",
+      "Confirm all compensation with passenger",
+      "Send confirmation summary to passenger email"
+    ],
+    "blockers": []
+  },
+
+  "recipient_instructions": {
+    "primary_objective": "Process all eligible compensation for airline-initiated cancellation per Gold tier entitlements.",
+    "constraints": [
+      "Follow COMP-MATRIX-v3.2 exactly — do not improvise amounts",
+      "Travel credit must be issued to passenger's loyalty account, not as a refund",
+      "Lounge access voucher is for departure airport (SFO) day-of-travel only",
+      "All compensation requires passenger confirmation before processing",
+      "Log all issued compensation to audit trail"
+    ],
+    "eligibility_details": "Gold tier + airline-initiated cancellation within 24h of departure. Eligible for: $200 travel credit, lounge access voucher, meal voucher (if delay > 4h). See COMP-MATRIX-v3.2 Section 4.1.",
+    "escalation_criteria": "Escalate to human supervisor if passenger disputes compensation amount or requests compensation not covered by the matrix.",
+    "timeout_sla": "Complete compensation processing within 10 minutes of handoff."
+  },
+
+  "context_for_recipient": {
+    "customer_emotional_state": "Mildly frustrated but cooperative. Expressed relief after rebooking was completed. Tone improved significantly after being offered the earlier AA 104 flight.",
+    "interaction_history": "Passenger initiated chat at 22:15Z. Rebooking completed in ~10 minutes. Passenger was responsive and decisive — selected first recommended option. No escalation requests.",
+    "tone_guidance": "Maintain the positive momentum from the successful rebooking. Be proactive in listing all entitlements. Frame compensation as something the passenger has earned, not a concession."
+  }
+}
